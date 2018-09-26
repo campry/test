@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indeema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="col">
+        <button class="add-modal" onclick="openModal()">Open Modal Window</button>
+    </div>
+
+    <div class="col">
+        <form class="calculate-form" id="calculate-form">
+            <input type="number" placeholder="Total" name="total" step="0.01" required>
+            <input type="number" placeholder="Price" name="price" step="0.01" required>
+        </form>
+        <button onclick="submit()" type="button">Submit</button>
+        <p id="cf-result" class="calculate-form-result"></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="table">
+        <form class="form" id="form_1">
+            <input type="text" name="name" placeholder="Name" class="form__input">
+            <input type="text" name="lastname" placeholder="Lastname" class="form__input">
+            <input type="text" name="email" placeholder="Email" class="form__input">
+            <button class="form__input" type="button" onclick="createRowData()">Submit</button>
+        </form>
+
+
+
+        <ul class="list" id="list">
+        </ul>
+        <button class="delete-rows" onclick="deleteCheckedRows()">Delete Rows</button>
+    </div>
+</div>
+
+</body>
+
+<script src="js/modal.js"></script>
+<script src="js/table.js"></script>
+<script src="js/calculate.js"></script>
+</html>

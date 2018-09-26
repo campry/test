@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.col {
+  width: 50%;
+  padding: 0 10px;
+  border-right: 1px solid black; }
+
+.add-modal {
+  outline: none;
+  height: 35px;
+  width: 200px;
+  color: #fff;
+  background-color: #0080ffc2;
+  border: 1px solid #0080ff;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px; }
+
+.modal {
+  position: fixed;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  animation: fadeIn .75s forwards; }
+  .modal.closing {
+    animation: fadeOut .75s forwards; }
+
+.calculate-form-result {
+  margin-top: 10px; }
+
+.table {
+  width: 100%; }
+  .table .form {
+    display: flex;
+    flex-direction: column; }
+    .table .form__input {
+      width: 300px;
+      margin-bottom: 10px; }
+      .table .form__input:last-child {
+        margin-bottom: 0; }
+  .table .list {
+    list-style-type: none;
+    border: 1px solid #a2a2a2;
+    margin-top: 20px; }
+    .table .list-item {
+      display: flex;
+      border-bottom: 1px solid #a2a2a2;
+      height: 20px;
+      align-items: center; }
+      .table .list-item:last-child {
+        border-bottom: none; }
+      .table .list-item__info {
+        width: 25%;
+        border-right: 1px solid #a2a2a2;
+        padding: 0 6px; }
+        .table .list-item__info:last-child {
+          border-right: none; }
+        .table .list-item__info--email {
+          width: calc(50% - 50px); }
+      .table .list-item-controls {
+        width: 50px;
+        justify-self: flex-end;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+  .table .delete-rows {
+    margin-top: 10px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+/*# sourceMappingURL=style.css.map */
